@@ -1,3 +1,4 @@
+import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 import React, { useState } from "react";
 
 function CreateArea(props) {
@@ -31,7 +32,7 @@ function CreateArea(props) {
         <textarea name="content" onChange={handleChange} placeholder="Take a note..." rows="3" value={container.content} />
         <button onClick={()=>{
           {props.onPressing(container)}
-        }}>Add</button>
+        }}><LibraryAddIcon/></button>
       </form>
     </div>
   );
